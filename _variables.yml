@@ -3,12 +3,12 @@ institute: "ETH Zurich"
 department: "Global Health Engineering"
 
 course:
-  code: "quarto-rdmss-25"
-  short-title: "quarto-rdmss-25"
+  code: "quarto-rdmss-26"
+  short-title: "quarto-rdmss-26"
   long-title: "Quarto - authoring and publishing tools for collaborative scientific writing"
-  site: "https://quarto-rdmss-25.github.io/website/"
-  site-short: "https://quarto-rdmss-25.github.io/website/"
-  github-org: "https://github.com/quarto-rdmss-25/"
+  site: "https://quarto-rdmss-26.github.io/website/"
+  site-short: "https://quarto-rdmss-26.github.io/website/"
+  github-org: "https://github.com/quarto-rdmss-26/"
 
 md-01:
   title: "Hello Quarto"

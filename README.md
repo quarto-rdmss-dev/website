@@ -2,7 +2,7 @@
 
 Website and course material for "Quarto - authoring and publishing tools for collaborative scientific writing"
 
-See https://quarto-rdmss-24.github.io/website/ for course website.
+See https://quarto-rdmss-26.github.io/website/ for course website.
 
 ## Abstract
 

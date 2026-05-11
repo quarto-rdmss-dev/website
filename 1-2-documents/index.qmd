@@ -14,13 +14,13 @@ title: "Documents"
 
 Participants will use the following exercises during the live session. Every students receives a copy of the exercise files as a GitHub repository, which they can edit and run in their own Posit Cloud workspace. 
 
--   <a href="https://raw.githubusercontent.com/quarto-rdmss-25/exercises/main/hello-penguins.qmd">{{< fa download >}} `hello-penguins.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/hello-penguins.qmd">{{< fa download >}} `hello-penguins.qmd`</i></a>
 
--   <a href="https://raw.githubusercontent.com/quarto-rdmss-25/exercises/main/markdown-syntax.qmd">{{< fa download >}} `markdown-syntax.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/markdown-syntax.qmd">{{< fa download >}} `markdown-syntax.qmd`</i></a>
 
--   <a href="https://raw.githubusercontent.com/quarto-rdmss-25/exercises/main/callout-boxes.qmd">{{< fa download >}} `callout-boxes.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/callout-boxes.qmd">{{< fa download >}} `callout-boxes.qmd`</i></a>
 
--   <a href="https://raw.githubusercontent.com/quarto-rdmss-25/exercises/main/tables-figures.qmd">{{< fa download >}} `tables-figures.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/tables-figures.qmd">{{< fa download >}} `tables-figures.qmd`</i></a>
 
-    -   <a href="https://github.com/quarto-rdmss-25/exercises/blob/main/images/quarto-logo.png?raw=true">{{< fa download >}} `quarto-logo.png`</i></a>
+    -   <a href="https://github.com/quarto-rdmss-26/exercises/blob/main/images/quarto-logo.png?raw=true">{{< fa download >}} `quarto-logo.png`</i></a>
 

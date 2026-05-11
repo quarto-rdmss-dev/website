@@ -12,9 +12,9 @@ website:
       challenges by introducing a workflow that utilizes the
       Quarto scientific and technical publishing system for
       collaborative scientific writing."
-  site-url: "https://quarto-rdmss-25.github.io/website/"
+  site-url: "https://quarto-rdmss-26.github.io/website/"
 
-  repo-url: https://github.com/quarto-rdmss-25/website
+  repo-url: https://github.com/quarto-rdmss-26/website
   repo-actions: [edit, issue]
 
   page-footer:
@@ -28,7 +28,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/quarto-rdmss-25/website
+        href: https://github.com/quarto-rdmss-26/website
         text: "GitHub organization"
     style: "docked"
     search: false
@@ -81,7 +81,7 @@ format:
     mainfont: "Atkinson Hyperlegible"
     include-in-header:
         - text: |
-            <script defer data-domain="quarto-rdmss-25.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="quarto-rdmss-26.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 freeze: auto
 editor: source

@@ -2,6 +2,6 @@
 title: "Tables and figures"
 ---
 
-This exercise is in your RStudio exercises project on Posit Cloud and has the title `tables-figures.qmd`: <https://posit.cloud/spaces/497061/content/all?sort=name_asc>
+This exercise is in your RStudio exercises project on Posit Cloud and has the title `tables-figures.qmd`: <https://posit.cloud/spaces/785946/content/all?sort=name_asc>
 
 All guidance is provided in the file.

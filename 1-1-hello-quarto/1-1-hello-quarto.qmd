@@ -2,7 +2,7 @@
 title: "{{< var md-01.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "Lars Schöbitz"
-date: "2025-06-05"
+date: "2026-06-04"
 date-format: long
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 logo: "../images/ghe-square-logo-vector.svg"
@@ -29,7 +29,7 @@ options(width = 65)
 library(countdown)
 ```
 
-# Welcome! `r emo::ji("wave")` {background-color="#4C326A"}
+# Welcome! {{< fa hand >}} {background-color="#4C326A"}
 
 ## Meet the lecturer {.smaller}
 
@@ -37,8 +37,8 @@ library(countdown)
 
 ![](images/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=40%}
 
--   Environmental Engineer `r emo::ji("hammer")`
--   Retired researcher `r emo::ji("bed")`
+-   Environmental Engineer {{< fa hammer >}}
+-   Retired researcher {{< fa bed >}}
 -   [RStudio certified instructor](https://education.rstudio.com/trainers/)
 -   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
 
@@ -180,7 +180,7 @@ Sit back and enjoy!
 
 ::: task
 - Open [posit.cloud](https://posit.cloud) & login with your details
-- Open the workspace for the course: <https://posit.cloud/spaces/657572>
+- Open the workspace for the course: <https://posit.cloud/spaces/785946>
 - Click "Start" next to the `exercises` project 
 - Wait until the project has deployed
 - Open `hello-penguins.qmd` in RStudio from the Files tab in the bottom-right window
@@ -313,7 +313,7 @@ countdown(minutes = 10)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## Thanks! `r emo::ji("sunflower")`
+## Thanks! {{< fa sun >}}
 
 Slides created via revealjs and Quarto: <https://quarto.org/docs/presentations/revealjs/>
 

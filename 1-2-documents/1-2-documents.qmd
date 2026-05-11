@@ -2,7 +2,7 @@
 title: "{{< var md-02.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "Lars Schöbitz"
-date: "2025-06-05"
+date: "2026-06-04"
 date-format: long
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 logo: "../images/ghe-square-logo-vector.svg"
@@ -678,7 +678,7 @@ head(penguins) |>
 :::
 :::
 
-## Thanks! `r emo::ji("sunflower")`
+## Thanks! {{< fa sun >}}
 
 Slides created via revealjs and Quarto: <https://quarto.org/docs/presentations/revealjs/>
 

@@ -4,7 +4,7 @@ author: "Lars Schöbitz"
 date: today
 format: 
   html: default
-  pdf: default
+  typst: default
   docx: default
 ---
 
@@ -30,4 +30,4 @@ Prior experience in a programming language is not required for this course, but 
 
 ## Prerequisites
 
-Prior to the course, learners are expected to have worked through the pre-course assignments listed on the course website: <https://quarto-rdmss-25.github.io/website/>
+Prior to the course, learners are expected to have worked through the pre-course assignments listed on the course website: <https://quarto-rdmss-26.github.io/website/>

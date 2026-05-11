@@ -11,9 +11,9 @@ bibliography: references.bib
 
 Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) is looking forward to meet you. 
 
-We will meet on Day 4 of the ETH Research Data Management Summer School 2025 in room CHN G 42 at the following time:
+We will meet on Day 4 of the ETH Research Data Management Summer School 2026 in room Breakout Gallery, RZD 8 at the following time:
 
-- 05 June 2025 - 15:15 to 17:30 CET
+- 04 June 2026 - 15:15 to 17:30 CET
 
 Please ensure you have the following available:
 
@@ -29,7 +29,7 @@ Prior to Day 1, please complete the following seven steps:
 -   [Step 1](0-2-pre-work/01-orcid.html): Register your ORCID iD.
 -   [Step 2](0-2-pre-work/02-posit-cloud.html): Log into Posit Cloud and join the course workspace.
 -   [Step 3](0-2-pre-work/03-quarto-pub.html): Create an account for Quarto Pub.
--   [Step 4](0-2-pre-work/04-survey.html): Fill out the pre-course survey by [**Wednesday, 04 June 2025**]{.highlight-yellow}.
+-   [Step 4](0-2-pre-work/04-survey.html): Fill out the pre-course survey by [**Tuesday, 02 June 2026**]{.highlight-yellow}.
 -   [Step 5](0-2-pre-work/05-about-page.html): Prepare information for an About page for a personal website.
 -   [Step 6](0-2-pre-work/06-reading.html): Read @wilson2017good ([optional]{.highlight-yellow})
 
@@ -44,7 +44,7 @@ library(readr)
 
 ```{r}
 #| tbl-colwidths: [25,75]
-read_csv(here::here("data/tbl-01-quarto-rdmss-25-course-schedule.csv")) |> 
+read_csv(here::here("data/tbl-01-quarto-rdmss-26-course-schedule.csv")) |>
   filter(day == 1) |> 
   select(Time = time, Module = title) |> 
   kable()

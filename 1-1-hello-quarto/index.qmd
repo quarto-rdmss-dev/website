@@ -14,5 +14,5 @@ title: "{{< var md-01.title >}}"
 
 Participants will use the following exercises during the live session. Every students receives a copy of the exercise files from Posit Cloud, which they can edit and run in their own Posit Cloud workspace. 
 
--   <a href="https://raw.githubusercontent.com/quarto-rdmss-25/exercises/main/hello-penguins.qmd">{{< fa download >}} `hello-penguins.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/hello-penguins.qmd">{{< fa download >}} `hello-penguins.qmd`</i></a>
 

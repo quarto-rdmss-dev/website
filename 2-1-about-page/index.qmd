@@ -20,7 +20,7 @@ In this task, it is up to you how much detail you would like to cover on this pa
 
 Write up your About page using the Quarto file format.
 
-1. Open the "Content" page of the Posit Cloud workspace for the course: <https://posit.cloud/spaces/657572/content/>
+1. Open the "Content" page of the Posit Cloud workspace for the course: <https://posit.cloud/spaces/785946/content/>
 
 2. Click on "New Project" button to create a new project
 
