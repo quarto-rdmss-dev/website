@@ -60,10 +60,14 @@ Let's build a website together. We will highlight the following features of Quar
 
 -   `_quarto.yml`
 
--   `index.qmd` / landing page 
+-   `index.qmd` / landing page
 
 -   Navigation
 
+:::
+
+::: notes
+Instructor: keep this tight to ~12 min. Show _quarto.yml + index.qmd + one nav entry. Skip the about-page deep dive (covered in pre-course work and the 2-1-about-page reference page).
 :::
 
 ## Your turn
@@ -81,6 +85,17 @@ countdown(minutes = 5)
 ```
 
 # Wrap up {background-color="#4C326A"}
+
+## Questions?
+
+::: {.hand-purple-large style="text-align: center;"}
+Anything from Websites you'd like clarified before we publish?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 2)
+```
 
 ## Learn more
 

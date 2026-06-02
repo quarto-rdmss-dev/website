@@ -63,9 +63,22 @@ library(countdown)
 
 - Found (or think you found) a bug or have a feature request, open an issue: <https://github.com/quarto-dev/quarto-cli/issues>
 
+# Open questions {background-color="#4C326A"}
+
+## Your questions, my answers
+
+::: {.hand-purple-large style="text-align: center;"}
+What is still unclear, or what would you like to explore further?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
 # Fin {background-color="#4C326A"}
 
-## Thank you! 
+## Thank you!
 
 - 🙏 Thank you for your attention and participation!
 - 📧 [openwashdata newsletter](https://buttondown.email/openwashdata)
