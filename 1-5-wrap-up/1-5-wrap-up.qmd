@@ -65,9 +65,9 @@ library(countdown)
 
 # Open questions {background-color="#4C326A"}
 
-## Your questions, my answers
+## {.unlisted}
 
-::: {.hand-purple-large style="text-align: center;"}
+::: {.hand-purple style="text-align: center;"}
 What is still unclear, or what would you like to explore further?
 :::
 

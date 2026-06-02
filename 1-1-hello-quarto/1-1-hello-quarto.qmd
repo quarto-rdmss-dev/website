@@ -251,9 +251,9 @@ In your exercises project in RStudio on Posit Cloud, go to [File \> New File \> 
 countdown(minutes = 10)
 ```
 
-## Questions?
+## {.unlisted}
 
-::: {.hand-purple-large style="text-align: center;"}
+::: {.hand-purple style="text-align: center;"}
 Anything from Hello Quarto you'd like clarified before the break?
 :::
 

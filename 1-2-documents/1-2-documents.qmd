@@ -329,9 +329,12 @@ countdown(minutes = 7)
 ## Citation, reference, bibliography
 
 ::: incremental
--   A **citation** marks where information originates in your text.\
-    Example: `Inequality underpins waste management [@kalina2023rich].`
+-   A **citation** marks where information originates in your text.
+
+    Example: Inequality underpins waste management [@kalina2023rich].
+
 -   A **reference** is the detailed description of one source: author, title, year, publisher, DOI.
+
 -   A **bibliography** is the list of all references in your document, usually printed at the end.
 :::
 
@@ -377,8 +380,8 @@ The reference list is generated **automatically at the end of the document**.
 CSL controls how citations and references are *formatted*.
 
 ::: incremental
--   **Author-date** (default): `(Knuth 1984)` / `Knuth (1984)`
--   **Numeric**: `[1]`
+-   **Author-date** (default): (Knuth 1984) / Knuth (1984)
+-   **Numeric**: \[1\]
 -   ~10,000 styles available in the [Zotero Style Repository](https://www.zotero.org/styles)
 :::
 
@@ -646,9 +649,9 @@ head(penguins) |>
 :::
 :::
 
-## Questions before we move on?
+## {.unlisted}
 
-::: {.hand-purple-large style="text-align: center;"}
+::: {.hand-purple style="text-align: center;"}
 Anything from Documents you'd like clarified before we head into Websites?
 :::
 
@@ -656,6 +659,11 @@ Anything from Documents you'd like clarified before we head into Websites?
 #| echo: false
 countdown(minutes = 3)
 ```
+
+## References {.smaller}
+
+::: {#refs}
+:::
 
 ## Thanks! {{< fa sun >}}
 

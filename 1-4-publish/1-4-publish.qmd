@@ -56,9 +56,9 @@ For when you outgrow Quarto Pub:
 
 # Wrap up {background-color="#4C326A"}
 
-## Questions?
+## {.unlisted}
 
-::: {.hand-purple-large style="text-align: center;"}
+::: {.hand-purple style="text-align: center;"}
 Anything about publishing you'd like clarified?
 :::
 
