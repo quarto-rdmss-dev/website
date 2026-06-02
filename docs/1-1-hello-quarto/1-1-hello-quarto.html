@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.36">
+  <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Lars Schöbitz">
   <meta name="dcterms.date" content="2026-06-04">
@@ -169,7 +169,7 @@ Lars Schöbitz
 <section id="learning-objectives" class="slide level2">
 <h2>Learning objectives</h2>
 <ol type="1">
-<li><p>Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.</p></li>
+<li><p>Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, cross-references, figures, and tables.</p></li>
 <li><p>Learn to use Quarto Pub to publish a website and share research with a broader audience.</p></li>
 </ol>
 </section>
@@ -187,7 +187,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_db6f9010" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_57c66bbf" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -217,34 +217,17 @@ Quarto Pub</p>
 <h1>Why? -&gt; Reproduciblity</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="why-reproducibility" class="slide level2">
+<h2>Why reproducibility</h2>
+<ul>
+<li class="fragment">Publisher data and code policies are tightening.</li>
+<li class="fragment">Reproducible documents reduce the “copy-paste” gap between analysis and write-up.</li>
+<li class="fragment">One source file, many outputs: HTML, PDF, Word, slides.</li>
+</ul>
 
-<img data-src="../0-1-overview/images/publisher-policies-01.drawio.svg" class="r-stretch"></section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-
-<img data-src="../0-1-overview/images/publisher-policies-02.drawio.svg" class="r-stretch"></section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-
-<img data-src="../0-1-overview/images/publisher-policies-03.drawio.svg" class="r-stretch"></section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-
-<img data-src="../0-1-overview/images/publisher-policies-04.drawio.svg" class="r-stretch"></section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-
-<img data-src="../0-1-overview/images/publisher-policies-05.drawio.svg" class="r-stretch"></section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-
-<img data-src="../0-1-overview/images/publisher-policies-06.drawio.svg" class="r-stretch"></section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-
-<img data-src="../0-1-overview/images/publisher-policies-07.drawio.svg" class="r-stretch"></section>
+<aside><div>
+<p>Full publisher-policy walkthrough: see <a href="../0-1-overview/index.html">overview slides</a></p>
+</div></aside></section>
 <section id="course-structure" class="slide level2">
 <h2>Course structure</h2>
 <ul>
@@ -307,17 +290,30 @@ Quarto Pub</p>
 <ul>
 <li>Open <a href="https://posit.cloud">posit.cloud</a> &amp; login with your details</li>
 <li>Open the workspace for the course: <a href="https://posit.cloud/spaces/785946" class="uri">https://posit.cloud/spaces/785946</a></li>
-<li>Click “Start” next to the <code>exercises</code> project</li>
-<li>Wait until the project has deployed</li>
-<li>Open <code>hello-penguins.qmd</code> in RStudio from the Files tab in the bottom-right window</li>
+<li>Click “Start” next to the <code>exercises</code> project, wait for it to deploy</li>
+<li>Open <code>hello-penguins.qmd</code> from the Files tab (bottom-right)</li>
 <li>Render the document</li>
-<li>Update your name and re-render</li>
-<li>Inspect components of the document and make one more update and re-render.</li>
+<li>Update the <code>author:</code> field with your name. Save the file. Re-render.</li>
+<li><strong>Find these three components</strong> in the file:
+<ul>
+<li>the YAML header (between the <code>---</code> lines at the top)</li>
+<li>one code chunk (between <code>```{r}</code> and <code>```</code>)</li>
+<li>one Markdown heading (line starting with <code>##</code>)</li>
+</ul></li>
+<li><strong>Make one change</strong>, save, re-render. Pick either:
+<ul>
+<li><ol type="a">
+<li>change <code>x = bill_length_mm</code> to <code>x = flipper_length_mm</code>, or</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>change <code>slice_head(n = 10)</code> to <code>slice_head(n = 5)</code></li>
+</ol></li>
+</ul></li>
 </ul>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_dc246f88" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_df5b14ca" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -357,104 +353,22 @@ Quarto Pub</p>
 </ul>
 </div>
 </section>
-<section id="many-quarto-formats" class="slide level2 smaller">
-<h2>Many Quarto formats</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>R Markdown</th>
-<th>Quarto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Basic Formats</td>
-<td><p><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html">html_document</a></p>
-<p><a href="https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html">pdf_document</a></p>
-<p><a href="https://pkgs.rstudio.com/rmarkdown/reference/word_document.html">word_document</a></p></td>
-<td><p><a href="https://quarto.org/docs/output-formats/html-basics.html">html</a></p>
-<p><a href="https://quarto.org/docs/output-formats/pdf-basics.html">pdf</a></p>
-<p><a href="https://quarto.org/docs/output-formats/ms-word.html">docx</a></p></td>
-</tr>
-<tr class="even">
-<td>Beamer</td>
-<td><a href="https://pkgs.rstudio.com/rmarkdown/reference/beamer_presentation.html">beamer_presentation</a></td>
-<td><a href="https://quarto.org/docs/presentations/beamer.html">beamer</a></td>
-</tr>
-<tr class="odd">
-<td>PowerPoint</td>
-<td><a href="https://pkgs.rstudio.com/rmarkdown/reference/powerpoint_presentation.html">powerpoint_presentation</a></td>
-<td><a href="https://quarto.org/docs/presentations/powerpoint.html">pptx</a></td>
-</tr>
-<tr class="even">
-<td>HTML Slides</td>
-<td><p><a href="https://bookdown.org/yihui/rmarkdown/xaringan.html">xaringan</a></p>
-<p><a href="https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html">ioslides</a></p>
-<p><a href="https://bookdown.org/yihui/rmarkdown/revealjs.html">revealjs</a></p></td>
-<td><a href="https://quarto.org/docs/presentations/revealjs/">revealjs</a></td>
-</tr>
-<tr class="odd">
-<td>Advanced Layout</td>
-<td><p><a href="https://bookdown.org/yihui/rmarkdown/tufte-handouts.html">tufte</a></p>
-<p><a href="https://rstudio.github.io/distill/figures.html">distill</a></p></td>
-<td><a href="https://quarto.org/docs/authoring/article-layout.html">Quarto Article Layout</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="many-quarto-formats-1" class="slide level2 smaller">
-<h2>Many Quarto formats</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>R Markdown</th>
-<th>Quarto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cross References</td>
-<td><p><a href="https://bookdown.org/yihui/bookdown/a-single-document.html">html_document2</a></p>
-<p><a href="https://bookdown.org/yihui/bookdown/a-single-document.html">pdf_document2</a></p>
-<p><a href="https://bookdown.org/yihui/bookdown/a-single-document.html">word_document2</a></p></td>
-<td><a href="https://quarto.org/docs/authoring/cross-references.html">Quarto Crossrefs</a></td>
-</tr>
-<tr class="even">
-<td>Websites &amp; Blogs</td>
-<td><p><a href="https://pkgs.rstudio.com/blogdown/">blogdown</a></p>
-<p><a href="https://pkgs.rstudio.com/distill/">distill</a></p></td>
-<td><p><a href="https://quarto.org/docs/websites/">Quarto Websites</a></p>
-<p><a href="https://quarto.org/docs/websites/website-blog.html">Quarto Blogs</a></p></td>
-</tr>
-<tr class="odd">
-<td>Books</td>
-<td><a href="https://pkgs.rstudio.com/bookdown/">bookdown</a></td>
-<td><a href="https://quarto.org/docs/books/">Quarto Books</a></td>
-</tr>
-<tr class="even">
-<td>Interactivity</td>
-<td><a href="https://bookdown.org/yihui/rmarkdown/shiny-documents.html">Shiny Documents</a></td>
-<td><a href="https://quarto.org/docs/interactive/shiny/">Quarto Interactive Documents</a></td>
-</tr>
-<tr class="odd">
-<td>Journal Articles</td>
-<td><a href="https://pkgs.rstudio.com/rticles/">rticles</a></td>
-<td><a href="https://quarto.org/docs/journals/index.html">Journal Articles</a></td>
-</tr>
-<tr class="even">
-<td>Dashboards</td>
-<td><a href="https://pkgs.rstudio.com/flexdashboard/">flexdashboard</a></td>
-<td>Coming soon!</td>
-</tr>
-</tbody>
-</table>
+<section id="one-syntax-many-formats" class="slide level2">
+<h2>One syntax, many formats</h2>
+<ul>
+<li class="fragment"><strong>Documents</strong>: HTML, PDF, Word</li>
+<li class="fragment"><strong>Presentations</strong>: revealjs, beamer, pptx</li>
+<li class="fragment"><strong>Multi-page</strong>: websites, blogs, books</li>
+<li class="fragment"><strong>Specialised</strong>: journal articles, dashboards, interactive (Shiny)</li>
+</ul>
+<div class="fragment">
+<p>Any language: R, Python, Julia, Observable. Same syntax, same approach.</p>
+</div>
 </section>
 <section id="your-turn-2" class="slide level2 small">
 <h2>Your turn</h2>
 <div class="task">
-<p>In your exercises project in RStudio on Posit Cloud, go to <span class="highlight-yellow">File &gt; New File &gt; Quarto document</span> to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use <code>my-first-document.qmd</code>. Use the visual editor for the next steps.</p>
+<p>In your exercises project in RStudio on Posit Cloud, go to <span class="highlight-yellow">File &gt; New File &gt; Quarto document</span> to create a Quarto document with HTML output. Save the file as <code>my-first-document.qmd</code>, then render. Use the visual editor for the next steps. <strong>Save (Cmd/Ctrl+S) before each render.</strong></p>
 <ul>
 <li><p>In the YAML header at the top of the document, add a title in the <code>title:</code> field and your name to the <code>author:</code> field.</p></li>
 <li><p>Create three sections in the document formatted as Heading 2, name these sections</p>
@@ -463,13 +377,25 @@ Quarto Pub</p>
 <li>Challenging tasks</li>
 <li>A fact to learn</li>
 </ul></li>
-<li><p><span class="highlight-yellow"><strong>Stretch goal:</strong></span> In the YAML header add a table of contents in the <code>format:</code> field. Tipp: Check <a href="https://quarto.org/">quarto.org</a> and use search function <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> with “HTML table of contents”</p></li>
-<li><p><span class="highlight-yellow"><strong>Stretch goal:</strong></span> Change the html theme to <code>sketchy</code>. Tipp: Check <a href="https://quarto.org/">quarto.org</a> and use search function <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> with “HTML theming”</p></li>
+<li><p><span class="highlight-yellow"><strong>Stretch goal:</strong></span> In the YAML header add a table of contents in the <code>format:</code> field. Tip: check <a href="https://quarto.org/">quarto.org</a> and use search <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> with “HTML table of contents”.</p></li>
+<li><p><span class="highlight-yellow"><strong>Stretch goal:</strong></span> Change the html theme to <code>sketchy</code>. Tip: check <a href="https://quarto.org/">quarto.org</a> and use search <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> with “HTML theming”.</p></li>
+<li><p><strong>Before you turn back</strong>: without looking, what does the <code>toc:</code> field do? What is the difference between visual and source editor mode?</p></li>
 </ul>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d6cf9df4" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_2fed730a" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+</section>
+<section id="section" class="slide level2 unlisted">
+<h2></h2>
+<div class="hand-purple" style="text-align: center;">
+<p>Anything from Hello Quarto you’d like clarified before the break?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_62df626a" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -479,7 +405,7 @@ Quarto Pub</p>
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="This is the prompt generated by DALL-E 3 by OpenAI: A pixel art scene representing the concept of taking a break. The scene shows a serene outdoor setting with a clear blue sky. In the center, a small pixelated character is sitting comfortably on a bright green grassy hill, under the shade of a large, leafy tree. The character is depicted in a relaxed pose, perhaps sipping a warm beverage from a small cup. Nearby, a gentle stream flows, and a few fluffy white clouds drift in the sky. The overall mood of the image is peaceful and calming, emphasizing the tranquility of taking a break in nature." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_156dd8a3" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0bf1507e" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
