@@ -10,3 +10,5 @@
 .positai
 
 **/*.quarto_ipynb
+
+docs/sitemap.xml
