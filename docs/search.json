@@ -95,11 +95,53 @@
     "text": "here is some more input on reviewing the slide material and what to do with the citations example: - reviewing slide material - 1-1 - remove the why reproducibility aspect - Your turn - update slide and give additional instructions for doing something in the file - Your turn - Review this task against best practices from teaching and learning sciences - 1-2 - remove Quotes - consider removing call-outs and instead doing something on citations - I have some material here - https://github.com/ds4owd-dev/md-08-exercises/blob/main/scholarly-writing.qmd - https://github.com/ds4owd-002/website/blob/main/content/slides/lec-08-quarto.qmd - remove footnotes"
   },
   {
-    "objectID": "prompts/2026-06-02-004-citations-needs-our-turn.html",
-    "href": "prompts/2026-06-02-004-citations-needs-our-turn.html",
+    "objectID": "prompts/2026-06-03-004-step-3-4-no-cmd-ctrl.html",
+    "href": "prompts/2026-06-03-004-step-3-4-no-cmd-ctrl.html",
     "title": "Quarto",
     "section": "",
-    "text": "the citations exercise needs to a our turn exercise. at least task 1 and task 2. there can then be some additional time allowed for the two stretch goals."
+    "text": "steo 3.4, no need to hold cmd or ctrl"
+  },
+  {
+    "objectID": "prompts/2026-06-03-006-better-naming-guide-about-pages.html",
+    "href": "prompts/2026-06-03-006-better-naming-guide-about-pages.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "figure out a better naming system for Guide -&gt; About - ABout Pages.\nthe About Pages can reference the pre-course work."
+  },
+  {
+    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html",
+    "href": "prompts/2026-06-02-003-citation-source-material-paste.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "can’t edit permissions. will add content here in md format:\nmd-08-exercises: — title: “An example scholarly article” date: today author: - name: First Last orcid: 0000-0003-2196-5015 email: me@web.org affiliation: - name: ETH Zurich url: https://ethz.ch/de.html abstract: The abstract will be placed here. Breaks can be added by hitting return on the keyboard. license: “CC BY” citation: container-title: My Blog url: https://www.example.com bibliography: references.bib csl: apa.csl editor: visual —"
+  },
+  {
+    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html#scholarly-writing",
+    "href": "prompts/2026-06-02-003-citation-source-material-paste.html#scholarly-writing",
+    "title": "Quarto",
+    "section": "Scholarly writing",
+    "text": "Scholarly writing\nScholarly articles require much more detail in their front matter than simply a title and an author. Quarto provides a rich set of YAML metadata keys to describe these details. You can copy & paste from this example to your own report."
+  },
+  {
+    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html#task-1-citations",
+    "href": "prompts/2026-06-02-003-citation-source-material-paste.html#task-1-citations",
+    "title": "Quarto",
+    "section": "Task 1: Citations",
+    "text": "Task 1: Citations\n\nAdd the citation key for the paper “‘My flight arrives at 5 am, can you pick me up?’: The gatekeeping burden of the african academic” as an in-text reference to the sentence below\n\nIn ___, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\nAdd the citation key for the paper “‘The rich will always be able to dispose of their waste’: a view from the frontlines of municipal failure in Makhanda, South Africa” as a citation at the end of the sentence below.\n\nInequality underpins waste management systems, structuring who can or cannot access services ___."
+  },
+  {
+    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html#bibliographies",
+    "href": "prompts/2026-06-02-003-citation-source-material-paste.html#bibliographies",
+    "title": "Quarto",
+    "section": "Bibliographies",
+    "text": "Bibliographies\nYour folder already contains a references.bib file. One way of creating and adding to this file is by using the RStudio Visual Editor mode. Another way is by exporting a collection in Zotero reference management tool. Teaching how to use Zotero is out of scope of this course, but we encourage you to explore this option. We have provided a guide that helps you in setting it up: https://ds4owd-002.github.io/website/guide/\nslide content: https://raw.githubusercontent.com/ds4owd-002/website/refs/heads/mai n/content/slides/lec-08-quarto.qmhttps://raw.githubusercontent.com/ds4owd-002/webs ite/refs/heads/mai n/content/slides/lec-08-quarto.q"
+  },
+  {
+    "objectID": "prompts/2026-06-02-001-review-course-with-learning-sciences.html",
+    "href": "prompts/2026-06-02-001-review-course-with-learning-sciences.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "you have the course website as context in your workspcae. review the entire course using scientific evidence from learning and teaching sciences for best practices. think hard. ask me questions for clarification. My goal is to overall reduce content slightly so that there is some time for potential questions."
   },
   {
     "objectID": "0-3-homework/0-1-tables-figures.html",
@@ -962,39 +1004,39 @@
     "text": "Prior to Day 2, please complete the following two homework assignments:\n\nAssignment 1: Tables & Figures: Cross-references tables and figures in a document\nAssignment 2: About Page: Prepare content and create About page for your website"
   },
   {
-    "objectID": "prompts/2026-06-02-001-review-course-with-learning-sciences.html",
-    "href": "prompts/2026-06-02-001-review-course-with-learning-sciences.html",
+    "objectID": "prompts/2026-06-03-003-new-screenshot-add-quarto-pub-login-step.html",
+    "href": "prompts/2026-06-03-003-new-screenshot-add-quarto-pub-login-step.html",
     "title": "Quarto",
     "section": "",
-    "text": "you have the course website as context in your workspcae. review the entire course using scientific evidence from learning and teaching sciences for best practices. think hard. ask me questions for clarification. My goal is to overall reduce content slightly so that there is some time for potential questions."
+    "text": "added a new screenshot. work it in. also, add another step before getting started that says to be logged into quarto pub with the user created as part of precourse work"
   },
   {
-    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html",
-    "href": "prompts/2026-06-02-003-citation-source-material-paste.html",
+    "objectID": "prompts/2026-06-02-004-citations-needs-our-turn.html",
+    "href": "prompts/2026-06-02-004-citations-needs-our-turn.html",
     "title": "Quarto",
     "section": "",
-    "text": "can’t edit permissions. will add content here in md format:\nmd-08-exercises: — title: “An example scholarly article” date: today author: - name: First Last orcid: 0000-0003-2196-5015 email: me@web.org affiliation: - name: ETH Zurich url: https://ethz.ch/de.html abstract: The abstract will be placed here. Breaks can be added by hitting return on the keyboard. license: “CC BY” citation: container-title: My Blog url: https://www.example.com bibliography: references.bib csl: apa.csl editor: visual —"
+    "text": "the citations exercise needs to a our turn exercise. at least task 1 and task 2. there can then be some additional time allowed for the two stretch goals."
   },
   {
-    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html#scholarly-writing",
-    "href": "prompts/2026-06-02-003-citation-source-material-paste.html#scholarly-writing",
+    "objectID": "prompts/2026-06-03-001-work-remaining-todos-issue-4.html",
+    "href": "prompts/2026-06-03-001-work-remaining-todos-issue-4.html",
     "title": "Quarto",
-    "section": "Scholarly writing",
-    "text": "Scholarly writing\nScholarly articles require much more detail in their front matter than simply a title and an author. Quarto provides a rich set of YAML metadata keys to describe these details. You can copy & paste from this example to your own report."
+    "section": "",
+    "text": "screenshot added, work on remaining todos of issue 4"
   },
   {
-    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html#task-1-citations",
-    "href": "prompts/2026-06-02-003-citation-source-material-paste.html#task-1-citations",
+    "objectID": "prompts/2026-06-03-002-command-isnt-typed-recreate-screenshots.html",
+    "href": "prompts/2026-06-03-002-command-isnt-typed-recreate-screenshots.html",
     "title": "Quarto",
-    "section": "Task 1: Citations",
-    "text": "Task 1: Citations\n\nAdd the citation key for the paper “‘My flight arrives at 5 am, can you pick me up?’: The gatekeeping burden of the african academic” as an in-text reference to the sentence below\n\nIn ___, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\nAdd the citation key for the paper “‘The rich will always be able to dispose of their waste’: a view from the frontlines of municipal failure in Makhanda, South Africa” as a citation at the end of the sentence below.\n\nInequality underpins waste management systems, structuring who can or cannot access services ___."
+    "section": "",
+    "text": "the command isn’t typed. i think yiou got to crecreate the screenshorts"
   },
   {
-    "objectID": "prompts/2026-06-02-003-citation-source-material-paste.html#bibliographies",
-    "href": "prompts/2026-06-02-003-citation-source-material-paste.html#bibliographies",
+    "objectID": "prompts/2026-06-03-005-step-3-6-remove-different-name.html",
+    "href": "prompts/2026-06-03-005-step-3-6-remove-different-name.html",
     "title": "Quarto",
-    "section": "Bibliographies",
-    "text": "Bibliographies\nYour folder already contains a references.bib file. One way of creating and adding to this file is by using the RStudio Visual Editor mode. Another way is by exporting a collection in Zotero reference management tool. Teaching how to use Zotero is out of scope of this course, but we encourage you to explore this option. We have provided a guide that helps you in setting it up: https://ds4owd-002.github.io/website/guide/\nslide content: https://raw.githubusercontent.com/ds4owd-002/website/refs/heads/mai n/content/slides/lec-08-quarto.qmhttps://raw.githubusercontent.com/ds4owd-002/webs ite/refs/heads/mai n/content/slides/lec-08-quarto.q"
+    "section": "",
+    "text": "3.6 remove type different nam,e"
   },
   {
     "objectID": "0-2-pre-work/01-orcid.html",
