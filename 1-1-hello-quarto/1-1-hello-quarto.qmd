@@ -168,13 +168,8 @@ Sit back and enjoy!
 - Open `hello-penguins.qmd` from the Files tab (bottom-right)
 - Render the document
 - Update the `author:` field with your name. Save the file. Re-render.
-- **Find these three components** in the file:
-  - the YAML header (between the `---` lines at the top)
-  - one code chunk (between ```` ```{r} ```` and ```` ``` ````)
-  - one Markdown heading (line starting with `##`)
-- **Make one change**, save, re-render. Pick either:
-  - (a) change `x = bill_length_mm` to `x = flipper_length_mm`, or
-  - (b) change `slice_head(n = 10)` to `slice_head(n = 5)`
+- Change `format: html` to `format: typst` in the YAML header. Save, then re-render to produce a PDF.
+- Make one more change anywhere in the document, save, and re-render to see your edit appear.
 :::
 
 ```{r}

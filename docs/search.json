@@ -106,7 +106,7 @@
     "href": "0-3-homework/0-1-tables-figures.html",
     "title": "Tables and figures",
     "section": "",
-    "text": "This exercise is in your RStudio exercises project on Posit Cloud and has the title tables-figures.qmd: https://posit.cloud/spaces/785946/content/all?sort=name_asc\nAll guidance is provided in the file."
+    "text": "This exercise is in your RStudio exercises project on Posit Cloud and has the title tables-figures.qmd: https://posit.cloud/spaces/785946/content/\nAll guidance is provided in the file."
   },
   {
     "objectID": "1-4-publish/index.html",
@@ -162,40 +162,40 @@
     ]
   },
   {
-    "objectID": "index.html#course-schedule",
-    "href": "index.html#course-schedule",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e6461722d64617973203e7d7d-course-schedule",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e6461722d64617973203e7d7d-course-schedule",
     "title": "Pre-course work: Quarto - authoring and publishing tools for collaborative scientific writing",
-    "section": "Course schedule",
+    "section": " Course schedule",
     "text": "Course schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n15:15 - 16:05\nHello Quarto\n\n\n16:05 - 16:10\nBreak\n\n\n16:10 - 16:40\nDocuments\n\n\n16:40 - 17:00\nWebsites\n\n\n17:00 - 17:05\nBreak\n\n\n17:00 - 17:20\nPublish\n\n\n17:20 - 17:30\nWrap-up",
     "crumbs": [
       "Pre-course work"
     ]
   },
   {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
     "title": "Pre-course work: Quarto - authoring and publishing tools for collaborative scientific writing",
-    "section": "Learning objectives",
+    "section": " Learning objectives",
     "text": "Learning objectives\nThis course has the following learning objectives\n\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with footnotes, cross-references, figures, and tables.\nLearn to use Quarto Pub to publish a website and share research with a broader audience.\n\nThe complete abstract for this course is available at: Abstract",
     "crumbs": [
       "Pre-course work"
     ]
   },
   {
-    "objectID": "index.html#thanks",
-    "href": "index.html#thanks",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666163652d736d696c65203e7d7d-thanks",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120666163652d736d696c65203e7d7d-thanks",
     "title": "Pre-course work: Quarto - authoring and publishing tools for collaborative scientific writing",
-    "section": "Thanks!",
+    "section": " Thanks!",
     "text": "Thanks!\nThank you for working through these steps. We are looking forward to meeting you at the course.",
     "crumbs": [
       "Pre-course work"
     ]
   },
   {
-    "objectID": "index.html#attribution",
-    "href": "index.html#attribution",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-attribution",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-attribution",
     "title": "Pre-course work: Quarto - authoring and publishing tools for collaborative scientific writing",
-    "section": "Attribution",
+    "section": " Attribution",
     "text": "Attribution\nContent was re-used from a workshop hosted by Mine Çetinkaya-Rundel at the 2023 Symposium on Data Science and Statistics and stored at https://github.com/mine-cetinkaya-rundel/quarto-sdss. The original content is licensed under a Creative Commons Attribution 4.0 International License.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
     "crumbs": [
       "Pre-course work"
@@ -276,7 +276,7 @@
     "href": "1-1-hello-quarto/1-1-hello-quarto.html#your-turn-1",
     "title": "Hello Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen posit.cloud & login with your details\nOpen the workspace for the course: https://posit.cloud/spaces/785946\nClick “Start” next to the exercises project, wait for it to deploy\nOpen hello-penguins.qmd from the Files tab (bottom-right)\nRender the document\nUpdate the author: field with your name. Save the file. Re-render.\nFind these three components in the file:\n\nthe YAML header (between the --- lines at the top)\none code chunk (between ```{r} and ```)\none Markdown heading (line starting with ##)\n\nMake one change, save, re-render. Pick either:\n\n\nchange x = bill_length_mm to x = flipper_length_mm, or\n\n\nchange slice_head(n = 10) to slice_head(n = 5)"
+    "text": "Your turn\n\n\nOpen posit.cloud & login with your details\nOpen the workspace for the course: https://posit.cloud/spaces/785946\nClick “Start” next to the exercises project, wait for it to deploy\nOpen hello-penguins.qmd from the Files tab (bottom-right)\nRender the document\nUpdate the author: field with your name. Save the file. Re-render.\nChange format: html to format: typst in the YAML header. Save, then re-render to produce a PDF.\nMake one more change anywhere in the document, save, and re-render to see your edit appear."
   },
   {
     "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#from-the-comfort-of-your-own-workspace",
@@ -731,7 +731,7 @@
     "href": "2-1-about-page/index.html#step-2-live-in-workshop",
     "title": "About",
     "section": "Step 2 (live in workshop)",
-    "text": "Step 2 (live in workshop)\nWrite up your About page using the Quarto file format.\n\nOpen the “Content” page of the Posit Cloud workspace for the course: https://posit.cloud/spaces/785946/content/\nClick on “New Project” button to create a new project\n\n\n\n\n\n\n\n\n\n\n\nClick on “New RStudio Project”\n\n\n\n\n\n\n\n\n\n\n\nWhile the project deploys, rename it from “Untitled Project” to “website” by clicking on the “Untitled Project” text in the top-left corner of the RStudio window. You can also rename it after deployment has concluded.\n\n\n\n\n\n\n\n\n\n\n\nDelete the setup.qmd from the Files in the bottom-right window.\n\n\n\n\n\n\n\n\n\n\n\nDelete or update the README.md file in the Files in the bottom-right window.\nCreate a Blank file using Quarto Document, name it index.qmd and save it in the root of the project.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen the index.qmd file and write up your page with guidance (e.g. copy/paste and replace) from Quarto documentation for About Pages\n\n\n\n\n\n\n\n\n\n\n\nRender the index.qmd file to see what your website will look like\nKeep updating the index.qmd until you are satisfied with the content and layout (e.g. try a different template, add your profile photo to the project folder, etc.)",
+    "text": "Step 2 (live in workshop)\nWrite up your About page using the Quarto file format.\n\n\n\n\n\n\nNote\n\n\n\nThe screenshots below are taken from a different course. The steps are exactly the same, but where the screenshots show another workspace or project name, use quarto-rdmss-26 instead.\n\n\n\nOpen the “Content” page of the Posit Cloud workspace for the course: https://posit.cloud/spaces/785946/content/\nClick on “New Project” button to create a new project\n\n\n\n\n\n\n\n\n\n\n\nClick on “New RStudio Project”\n\n\n\n\n\n\n\n\n\n\n\nWhile the project deploys, rename it from “Untitled Project” to “website” by clicking on the “Untitled Project” text in the top-left corner of the RStudio window. You can also rename it after deployment has concluded.\n\n\n\n\n\n\n\n\n\n\n\nCreate a Blank file using Quarto Document, name it index.qmd and save it in the root of the project.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen the index.qmd file and write up your page with guidance (e.g. copy/paste and replace) from Quarto documentation for About Pages\n\n\n\n\n\n\n\n\n\n\n\nRender the index.qmd file to see what your website will look like\nKeep updating the index.qmd until you are satisfied with the content and layout (e.g. try a different template, add your profile photo to the project folder, etc.)",
     "crumbs": [
       "Guide",
       "About page"

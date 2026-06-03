@@ -9,7 +9,7 @@ editor_options:
 bibliography: references.bib
 ---
 
-Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) is looking forward to meet you. 
+Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/) is looking forward to meet you. 
 
 We will meet on Day 4 of the ETH Research Data Management Summer School 2026 in room Breakout Gallery, RZD 8 at the following time:
 
@@ -40,7 +40,7 @@ library(knitr)
 library(readr)
 ```
 
-## Course schedule
+## {{< fa calendar-days >}} Course schedule
 
 ```{r}
 #| tbl-colwidths: [25,75]
@@ -51,7 +51,7 @@ read_csv(here::here("data/tbl-01-quarto-rdmss-26-course-schedule.csv")) |>
   
 ```
 
-## Learning objectives
+## {{< fa bullseye >}} Learning objectives
 
 This course has the following learning objectives
 
@@ -63,11 +63,11 @@ This course has the following learning objectives
 
 The complete abstract for this course is available at: [Abstract](0-4-abstract/index.qmd)
 
-## Thanks!
+## {{< fa face-smile >}} Thanks!
 
 Thank you for working through these steps. We are looking forward to meeting you at the course.
 
-## Attribution
+## {{< fa sun >}} Attribution
 
 Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://mine-cr.com/) at the 2023 Symposium on Data Science and Statistics and stored at <https://github.com/mine-cetinkaya-rundel/quarto-sdss>. The original content is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 

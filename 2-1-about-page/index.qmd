@@ -20,6 +20,10 @@ In this task, it is up to you how much detail you would like to cover on this pa
 
 Write up your About page using the Quarto file format.
 
+::: {.callout-note}
+The screenshots below are taken from a different course. The steps are exactly the same, but where the screenshots show another workspace or project name, use `quarto-rdmss-26` instead.
+:::
+
 1. Open the "Content" page of the Posit Cloud workspace for the course: <https://posit.cloud/spaces/785946/content/>
 
 2. Click on "New Project" button to create a new project
@@ -40,16 +44,7 @@ knitr::include_graphics("images/02-website-new-project-rstudio.png")
 knitr::include_graphics("images/03-website-rename.png")
 ```
 
-5. Delete the `setup.qmd` from the Files in the bottom-right window.
-
-
-```{r}
-knitr::include_graphics("images/04-website-delete-setup.png")
-```
-
-6. Delete or update the `README.md` file in the Files in the bottom-right window.
-
-7. Create a Blank file using Quarto Document, name it `index.qmd` and save it in the root of the project.
+5. Create a Blank file using Quarto Document, name it `index.qmd` and save it in the root of the project.
 
 ```{r}
 knitr::include_graphics("images/05-website-new-quarto-doc.png")
@@ -59,13 +54,13 @@ knitr::include_graphics("images/05-website-new-quarto-doc.png")
 knitr::include_graphics("images/06-website-name-index.png")
 ```
 
-8. Open the `index.qmd` file and write up your page with guidance (e.g. copy/paste and replace) from  [Quarto documentation for About Pages](https://quarto.org/docs/websites/website-about.html) 
+6. Open the `index.qmd` file and write up your page with guidance (e.g. copy/paste and replace) from  [Quarto documentation for About Pages](https://quarto.org/docs/websites/website-about.html)
 
 
 ```{r}
 knitr::include_graphics("images/07-website-copy-about.png")
 ```
 
-9. Render the `index.qmd` file to see what your website will look like
+7. Render the `index.qmd` file to see what your website will look like
 
-10. Keep updating the `index.qmd` until you are satisfied with the content and layout (e.g. try a different template, add your profile photo to the project folder, etc.)
+8. Keep updating the `index.qmd` until you are satisfied with the content and layout (e.g. try a different template, add your profile photo to the project folder, etc.)
