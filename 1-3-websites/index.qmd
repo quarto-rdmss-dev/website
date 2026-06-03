@@ -66,3 +66,5 @@ knitr::include_graphics("images/07-website-copy-about.png")
 7. Render the `index.qmd` file to see what your website will look like
 
 8. Keep updating the `index.qmd` until you are satisfied with the content and layout (e.g. try a different template, add your profile photo to the project folder, etc.)
+
+When you are ready to publish your website, see the step-by-step [About page Guide](../2-1-about-page/) or work through module [1-4 Publish](../1-4-publish/).
