@@ -64,10 +64,10 @@ website:
             text: "Publish"
           - href: 1-5-wrap-up/index.qmd
             text: "Wrap up"
-      - section: "Guide"
+      - section: "Build your About page"
         contents:
           - href: 2-1-about-page/index.qmd
-            text: "About page"
+            text: "Walkthrough"
 
 format:
   html:

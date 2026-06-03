@@ -1,14 +1,16 @@
 ---
-title: "About"
-execute: 
+title: "Build your About page"
+execute:
   echo: false
 ---
 
-## About Pages
+## What is an About page?
 
-It's good practice for a website to have an About page. A lot of people look for this page when they first open a website and it can used to highlight the content of it or who you are. About pages in Quarto have some additional functionality that results in a nice layout and design. We will use the About page as the landing page (index) of your website. 
+It's good practice for a website to have an About page. A lot of people look for this page when they first open a website and it can used to highlight the content of it or who you are. About pages in Quarto have some additional functionality that results in a nice layout and design. We will use the About page as the landing page (index) of your website.
 
 In this task, it is up to you how much detail you would like to cover on this page. The idea is for this page to be front and center of your personal public homepage that we will to publish next week. Follow the steps below to create your About page.
+
+If you have not yet done it, complete [Pre-work Step 5: About Page](../0-2-pre-work/05-about-page.html) first; the steps below build on the information you prepared there.
 
 ## Step 1 (part of pre-work)
 
@@ -64,3 +66,67 @@ knitr::include_graphics("images/07-website-copy-about.png")
 7. Render the `index.qmd` file to see what your website will look like
 
 8. Keep updating the `index.qmd` until you are satisfied with the content and layout (e.g. try a different template, add your profile photo to the project folder, etc.)
+
+## Step 3 (live in workshop)
+
+Publish your About page to [Quarto Pub](https://quartopub.com/) so anyone with the link can view it.
+
+Before you start, make sure you are signed in to Quarto Pub in your browser with the account you created in [Pre-work Assignment 3](../0-2-pre-work/03-quarto-pub.html). The browser authorisation step later in this section will use that signed-in account.
+
+1. In the Terminal pane (bottom-left of RStudio), type `quarto publish` and press Enter.
+
+```{r}
+knitr::include_graphics("images/09-publish-command-typed.png")
+```
+
+2. Pick `Quarto Pub` from the list of publishing destinations.
+
+```{r}
+knitr::include_graphics("images/10-publish-provider-menu.png")
+```
+
+3. Press `Y` to confirm that you want to authorise Quarto CLI to publish on your behalf.
+
+```{r}
+knitr::include_graphics("images/11-publish-authorize-prompt.png")
+```
+
+4. The Terminal prints a URL. Click the link to open it in your browser.
+
+```{r}
+knitr::include_graphics("images/13-publish-auth-url.png")
+```
+
+5. In the browser, click **Allow** to grant Quarto CLI access to your Quarto Pub account.
+
+```{r}
+knitr::include_graphics("images/14-publish-browser-allow.png")
+```
+
+6. Back in the Terminal, accept the default site name (`website`) by pressing Enter.
+
+```{r}
+knitr::include_graphics("images/15-publish-site-name.png")
+```
+
+7. Quarto prepares, uploads, and deploys the site. When it is done, the Terminal prints the public URL.
+
+```{r}
+knitr::include_graphics("images/16-publish-deploying.png")
+```
+
+8. Open the URL in your browser to see your published About page.
+
+```{r}
+knitr::include_graphics("images/17-publish-deployed-site.png")
+```
+
+9. You can manage your site (rename, delete, see analytics) from your Quarto Pub dashboard at <https://quartopub.com/>.
+
+```{r}
+knitr::include_graphics("images/18-publish-dashboard.png")
+```
+
+::: {.callout-tip}
+After the first publish, Quarto creates a `_publish.yml` file in your project that remembers your site. To push updates later, just run `quarto publish` again from the Terminal; no need to re-authorise.
+:::
