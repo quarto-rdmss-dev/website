@@ -131,7 +131,11 @@ format:
 
 ## YAML validation {.smaller}
 
--   Invalid: No space after `:`
+Indentation and spacing matter.
+
+::: columns
+::: {.column width="50%"}
+**Invalid**
 
 ``` yaml
 ---
@@ -139,29 +143,28 @@ format:html
 ---
 ```
 
--   Invalid: Read as missing
+(no space after `:`)
+:::
+
+::: {.column width="50%"}
+**Valid**
 
 ``` yaml
 ---
-format:
-html
----
-```
-
-## YAML validation {.smaller}
-
-There are multiple ways of formatting valid YAML:
-
--   Valid: There's a space after `:`
-
-``` yaml
 format: html
+---
 ```
 
--   Valid: `format: html` with selections made with proper indentation
+(space after `:`)
+:::
+:::
+
+. . .
+
+With nested options, indentation matters too:
 
 ``` yaml
-format: 
+format:
   html:
     toc: true
 ```
@@ -307,25 +310,6 @@ Ordered list:
 :::
 :::
 
-## Quotes
-
-**Markdown:**
-
-``` markdown
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
-> - Donald Knuth, Literate Programming
-```
-
-. . .
-
-**Output:**
-
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming
-
-::: aside
-@knuth1984literate
-:::
-
 ## Your turn
 
 ::: task
@@ -340,82 +324,106 @@ Ordered list:
 countdown(minutes = 7)
 ```
 
-## Callouts
+# Citations {background-color="#4C326A"}
 
-```         
-::: callout-note
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
+## Citation, reference, bibliography
+
+::: incremental
+-   A **citation** marks where information originates in your text.
+
+    Example: Inequality underpins waste management [@kalina2023rich].
+
+-   A **reference** is the detailed description of one source: author, title, year, publisher, DOI.
+
+-   A **bibliography** is the list of all references in your document, usually printed at the end.
 :::
+
+## Citations in Quarto {.smaller}
+
+::: columns
+::: {.column width="50%"}
+**Step 1: declare the bibliography in YAML**
+
+``` yaml
+---
+title: "My article"
+bibliography: references.bib
+---
 ```
 
-::: callout-note
-Note that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and `important`.
+**Step 2: cite with `@key`**
+
+``` markdown
+As @knuth1984literate argued, programs
+should be written for humans first.
+
+Inequality underpins waste management
+[@kalina2023rich].
+```
 :::
 
-## More callouts
+::: {.column .fragment width="50%"}
+**Output**
 
-::: callout-warning
-Callouts provide a simple way to attract attention, for example, to this warning.
+As @knuth1984literate argued, programs should be written for humans first.
+
+Inequality underpins waste management [@kalina2023rich].
+
+. . .
+
+The reference list is generated **automatically at the end of the document**.
+:::
 :::
 
-::: callout-important
-Danger, callouts will really improve your writing.
+## Citation Style Language (CSL) {.smaller}
+
+CSL controls how citations and references are *formatted*.
+
+::: incremental
+-   **Author-date** (default): (Knuth 1984) / Knuth (1984)
+-   **Numeric**: \[1\]
+-   ~10,000 styles available in the [Zotero Style Repository](https://www.zotero.org/styles)
 :::
 
-::: callout-caution
-Here is something under construction.
+. . .
+
+Add a `csl:` field in YAML to switch styles:
+
+``` yaml
+---
+bibliography: references.bib
+csl: apa.csl
+---
+```
+
+::: aside
+Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you.
 :::
 
-::: callout-tip
-## Caption
+## Our turn
 
-Tip with caption.
+::: task
+Open `citations.qmd` in RStudio. We will walk through Task 1 and Task 2 together:
+
+-   **Task 1**: add `@tilley2021my` as an in-text citation in the first sentence.
+-   **Task 2**: add `[@kalina2023rich]` as a parenthetical citation in the second sentence.
+-   Render and find the auto-generated reference list at the bottom of the document.
 :::
 
 ## Your turn
 
 ::: task
--   Open `callout-boxes.qmd` and render the document.
--   Using the [visual editor]{.highlight-yellow} mode, change the type of the first callouts box and then re-render.
--   Add a caption to the second callout box.
--   Make the third callout box collapsible. Then, switch over to the [source editor]{.highlight-yellow} mode to inspect the markdown code.
--   Change the format to PDF and re-render.
-:::
+Pick **one** stretch goal from `citations.qmd`:
 
-::: callout-tip
-## How to edit the options?
-
-![](images/edit-code-chunk-options.png){style="width:800px;"}
+-   **Stretch 1**: add `csl: apa.csl` to the YAML header, re-render, and compare the formatting.
+-   **Stretch 2**: copy the rich scholarly YAML block into a new document and render.
 :::
 
 ```{r}
 #| echo: false
 
-countdown(minutes = 7)
+countdown(minutes = 5)
 ```
-
-## Footnotes
-
-Numbering and formatting footnotes is supported.
-
-## Inline footnotes
-
-```         
-Here is an inline note.^[Inlines notes are easier to write,
-since you don't have to pick an identifier and move down to
-type the note.]
-```
-
-Here is an inline note.[^1]
-
-[^1]: Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note.
-
-::: callout-tip
-## Use the source editor mode
-
-The source editor mode is the recommended way to add footnotes.
-:::
 
 # Code {background-color="#4C326A"}
 
@@ -443,14 +451,6 @@ penguins |>
 -   Engine (`r`) is indicated between curly braces `{r}`
 -   Options stated with the `#|` (hashpipe)
 :::
-:::
-
-## Code, who is it for?
-
-::: incremental
--   The way you display code is very different for different contexts.
--   In a teaching scenario like today, I *really* want to display code.
--   In a business, you may want to have a data-science facing output which displays the source code AND a stakeholder-facing output which hides the code.
 :::
 
 ## Showing and hiding code with `echo`
@@ -538,11 +538,13 @@ head(penguins) |>
 
 ![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)
 
-## Subfigures
+## Subfigures {.smaller}
 
+::: columns
+::: {.column width="55%"}
 **Markdown:**
 
-```         
+```
 ::: {#fig-penguins layout-ncol=2}
 
 ![Blue penguin](images/blue-penguin.png){#fig-blue width="250px"}
@@ -553,51 +555,20 @@ Two penguins
 
 :::
 ```
+:::
 
-## Subfigures
-
+::: {.column .fragment width="45%"}
 **Output:**
 
 ::: {#fig-penguins layout-ncol="2"}
-![Blue penguin](images/blue-penguin.png){#fig-blue width="250px"}
+![Blue penguin](images/blue-penguin.png){#fig-blue width="150px"}
 
-![Orange penguin](images/orange-penguin.png){#fig-sleep width="250px"}
+![Orange penguin](images/orange-penguin.png){#fig-sleep width="150px"}
 
 Two penguins
 :::
-
-## Finding the figures to include
-
-In places like markdown, YAML, or the command line/shell/terminal, you'll need to use **absolute** or **relative** file paths:
-
-. . .
-
--   Absolute = BAD: `"/Users/lars/exercises"` - Whose computer will this work on?
-
-. . .
-
--   Relative = BETTER:
-
-    -   `"../` = up one directory, `../../` = up two directories, etc.
-    -   `/..` or `/` = start from `root` directory of your current computer
-
-## Figures with code
-
-```{r}
-#| echo: fenced
-#| fig-width: 4
-#| fig-align: right
-
-knitr::include_graphics("images/penguins-quarto-ball.png")
-```
-
-## Referencing paths in R code
-
-Use the **here** package to reference the project root, as `here::here()` always starts at the top-level directory of a `.Rproj`:
-
-```{r}
-here::here()
-```
+:::
+:::
 
 ## Figures from code
 
@@ -676,6 +647,22 @@ head(penguins) |>
   gt()
 ```
 :::
+:::
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+Anything from Documents you'd like clarified before we head into Websites?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 3)
+```
+
+## References {.smaller}
+
+::: {#refs}
 :::
 
 ## Thanks! {{< fa sun >}}

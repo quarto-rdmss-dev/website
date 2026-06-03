@@ -20,7 +20,7 @@ execute:
 
 # Publishing {background-color="#4C326A"}
 
-## QuartoPub
+## Quarto Pub
 
 -   [Quarto Pub](https://quartopub.com/) is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.
 
@@ -32,29 +32,14 @@ quarto publish quarto-pub
 
 -   Gain a `_publish.yml` that is safe to check into version control.
 
-## GitHub Pages
-
--  [GitHub Pages](https://pages.github.com/) is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.
-
-```{r}
-#| echo: false
-knitr::include_graphics("images/screenshot-gh-pages.png")
-```
-
-
-## Other venues
-
--   Posit Connect
--   Netlify
--   Confluence
--   [More venues](https://quarto.org/docs/publishing/other.html)
-
 ## Our turn
 
 ::: task
-Let's now publish our website to GitHub Pages.
+Let's now publish our website to Quarto Pub.
 
 -   Open your website project on Posit Cloud
+-   In the Terminal, run `quarto publish quarto-pub`
+-   Follow the authorisation prompts in the browser
 :::
 
 ```{r}
@@ -62,7 +47,25 @@ Let's now publish our website to GitHub Pages.
 countdown::countdown(5)
 ```
 
+## Other venues
+
+For when you outgrow Quarto Pub:
+
+-   GitHub Pages, Posit Connect, Netlify, Confluence, and more.
+-   Full list: [quarto.org/docs/publishing](https://quarto.org/docs/publishing/)
+
 # Wrap up {background-color="#4C326A"}
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+Anything about publishing you'd like clarified?
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(2)
+```
 
 ## Learn more
 

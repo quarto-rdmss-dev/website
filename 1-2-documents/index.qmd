@@ -18,7 +18,7 @@ Participants will use the following exercises during the live session. Every stu
 
 -   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/markdown-syntax.qmd">{{< fa download >}} `markdown-syntax.qmd`</i></a>
 
--   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/callout-boxes.qmd">{{< fa download >}} `callout-boxes.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/citations.qmd">{{< fa download >}} `citations.qmd`</i></a>
 
 -   <a href="https://raw.githubusercontent.com/quarto-rdmss-26/exercises/main/tables-figures.qmd">{{< fa download >}} `tables-figures.qmd`</i></a>
 
