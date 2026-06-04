@@ -283,7 +283,7 @@
     "href": "1-1-hello-quarto/1-1-hello-quarto.html#why-reproducibility",
     "title": "Hello Quarto",
     "section": "Why reproducibility",
-    "text": "Why reproducibility\n\nPublisher data and code policies are tightening.\nReproducible documents reduce the “copy-paste” gap between analysis and write-up.\nOne source file, many outputs: HTML, PDF, Word, slides.\n\n\n\nFull publisher-policy walkthrough: see overview slides"
+    "text": "Why reproducibility\n\nPublisher data and code policies are tightening.\nReproducible documents reduce the “copy-paste” gap between analysis and write-up.\nOne source file, many outputs: HTML, PDF, Word, slides."
   },
   {
     "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#course-structure",
@@ -297,7 +297,21 @@
     "href": "1-1-hello-quarto/1-1-hello-quarto.html#meeting-you-where-you-are",
     "title": "Hello Quarto",
     "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\ndo not have R experience\nhave not worked in an IDE before (e.g. RStudio IDE)\nwant to learn about Quarto\n\n\n\n\nI’ll teach you\n\nQuarto syntax and formats\nMarkdown\nSome R along the way!"
+    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\ndo not have R experience\nhave not worked in an IDE before (e.g. RStudio IDE)\ndo not have Git / GitHub experience\nwant to learn about Quarto\n\n\n\n\nI’ll teach you\n\nQuarto syntax and formats\nMarkdown\nSome R along the way!"
+  },
+  {
+    "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#section",
+    "href": "1-1-hello-quarto/1-1-hello-quarto.html#section",
+    "title": "Hello Quarto",
+    "section": "",
+    "text": "Figure 1: Coding experience across the cohort (n = 11)"
+  },
+  {
+    "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#what-you-want-to-learn",
+    "href": "1-1-hello-quarto/1-1-hello-quarto.html#what-you-want-to-learn",
+    "title": "Hello Quarto",
+    "section": "What you want to learn",
+    "text": "What you want to learn\n\n“What do you want to know or be able to do that you don’t know or can’t do right now?”\n\nOf the 11 answers:\n\n3 asked for things this course covers directly (personal websites, blogs, Quarto vs. GitHub Pages).\n2 asked for things partially covered (Quarto as the documentation layer for R scripts; Quarto as part of a reproducible pipeline).\n6 asked for things outside the scope of this course (Git workflows, AI agents for coding, AI with spreadsheets, long-term data archiving).\n\nThe other goals are valuable, but not what this workshop is about. I would be happy to follow up for targeted workshops."
   },
   {
     "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#quarto-1",
@@ -349,8 +363,8 @@
     "text": "Your turn\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output. Save the file as my-first-document.qmd, then render. Use the visual editor for the next steps. Save (Cmd/Ctrl+S) before each render.\n\nIn the YAML header at the top of the document, add a title in the title: field and your name to the author: field.\nCreate three sections in the document formatted as Heading 2, name these sections\n\nJoyful tasks\nChallenging tasks\nA fact to learn\n\nStretch goal: In the YAML header add a table of contents in the format: field. Tip: check quarto.org and use search  with “HTML table of contents”.\nStretch goal: Change the html theme to sketchy. Tip: check quarto.org and use search  with “HTML theming”.\nBefore you turn back: without looking, what does the toc: field do? What is the difference between visual and source editor mode?"
   },
   {
-    "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#section",
-    "href": "1-1-hello-quarto/1-1-hello-quarto.html#section",
+    "objectID": "1-1-hello-quarto/1-1-hello-quarto.html#section-1",
+    "href": "1-1-hello-quarto/1-1-hello-quarto.html#section-1",
     "title": "Hello Quarto",
     "section": "",
     "text": "Anything from Hello Quarto you’d like clarified before the break?"
@@ -412,97 +426,6 @@
       "Course",
       "Websites"
     ]
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d",
-    "title": "Overview",
-    "section": "",
-    "text": "Who has a LinkedIn account?"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-1",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-1",
-    "title": "Overview",
-    "section": "",
-    "text": "Who has an ORCID iD?"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-2",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-2",
-    "title": "Overview",
-    "section": "",
-    "text": "Who has a GitHub account?"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-3",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-3",
-    "title": "Overview",
-    "section": "",
-    "text": "Who uses a reference management system? (e.g. Mendeley, EndNote, Zotero)"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-4",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-4",
-    "title": "Overview",
-    "section": "",
-    "text": "Who has a personal homepage?"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-5",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d-5",
-    "title": "Overview",
-    "section": "",
-    "text": "Who has published a report, scientific article, or similar?"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#your-turn",
-    "href": "0-1-overview/0-1-overview.html#your-turn",
-    "title": "Overview",
-    "section": "Your turn",
-    "text": "Your turn\n\nThink about the last time you published a written document:\n\nWhich tasks gave you joy?\nWhich tasks were challenging or frustrating?\n\n\nTake some written notes.\n\n\n\n\n\n−+\n02:00"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d",
-    "title": "Overview",
-    "section": "",
-    "text": "Every student will have a personal, published, free website that links to their (academic) profiles, shows slides, and has the potential to be used as a (scientific) blog."
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120746f6f6c626f78203e7d7d",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120746f6f6c626f78203e7d7d",
-    "title": "Overview",
-    "section": "",
-    "text": "Quarto\nRStudio IDE\nZotero\nGit\nGitHub\nMatrix"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#section-7",
-    "href": "0-1-overview/0-1-overview.html#section-7",
-    "title": "Overview",
-    "section": "",
-    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c696e6b203e7d7d",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c696e6b203e7d7d",
-    "title": "Overview",
-    "section": "",
-    "text": "ost-hs23.github.io/website"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e742d646f7473203e7d7d",
-    "href": "0-1-overview/0-1-overview.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e742d646f7473203e7d7d",
-    "title": "Overview",
-    "section": "",
-    "text": "matrix.to/#/#ghe-open:staffchat.ethz.ch\n\n\nInstructions on openwashdata.org (under Get Started -&gt; Chat)"
-  },
-  {
-    "objectID": "0-1-overview/0-1-overview.html#thanks-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c656166203e7d7d",
-    "href": "0-1-overview/0-1-overview.html#thanks-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c656166203e7d7d",
-    "title": "Overview",
-    "section": "Thanks ",
-    "text": "Thanks \n\nContact: lschoebitz@ethz.ch\nDownload slides as PDF"
   },
   {
     "objectID": "1-2-documents/1-2-documents.html#components",
@@ -864,27 +787,6 @@
     "title": "Quarto - authoring and publishing tools for collaborative scientific writing",
     "section": "Prerequisites",
     "text": "Prerequisites\nPrior to the course, learners are expected to have worked through the pre-course assignments listed on the course website: https://quarto-rdmss-26.github.io/website/"
-  },
-  {
-    "objectID": "0-1-overview/index.html",
-    "href": "0-1-overview/index.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "This overview was prepared as a 10-minute presentation for the ETH4D lunch on 7th August 2023."
-  },
-  {
-    "objectID": "0-1-overview/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides",
-    "href": "0-1-overview/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides",
-    "title": "Course Overview",
-    "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
-  },
-  {
-    "objectID": "0-1-overview/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-suggested-readings",
-    "href": "0-1-overview/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-suggested-readings",
-    "title": "Course Overview",
-    "section": " Suggested readings",
-    "text": "Suggested readings\nIf you are interested to learn more about the concepts behind this course:\n\nread Good enough practices in scientific computing.\nread Excuse Me, Do You Have a Moment to Talk About Version Control?."
   },
   {
     "objectID": "1-3-websites/1-3-websites.html#quarto-projects",
