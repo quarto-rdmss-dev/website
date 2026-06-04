@@ -27,6 +27,37 @@ options(width = 65)
 
 # load background packages
 library(countdown)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(forcats)
+library(stringr)
+library(ggthemes)
+
+participants <- readr::read_csv(
+  "https://raw.githubusercontent.com/quarto-rdmss-26/admin/refs/heads/main/data/public/participants-anonymized.csv",
+  show_col_types = FALSE
+)
+
+exp_levels <- c(
+  "I have none."                                                            = "None",
+  "I have written a few lines now and again."                               = "A few lines",
+  "I have written programs for my own use that are a couple of pages long." = "Own programs",
+  "I have written and maintained larger pieces of software."                = "Larger software"
+)
+
+participants <- participants |>
+  mutate(
+    experience_programming_general = factor(
+      recode(experience_programming_general, !!!exp_levels),
+      levels = unname(exp_levels)
+    ),
+    experience_programming_r = factor(
+      recode(experience_programming_r, !!!exp_levels),
+      levels = unname(exp_levels)
+    )
+  )
 ```
 
 # Welcome! {{< fa hand >}} {background-color="#4C326A"}
@@ -102,10 +133,6 @@ Quarto Pub
 -   One source file, many outputs: HTML, PDF, Word, slides.
 :::
 
-::: aside
-Full publisher-policy walkthrough: see [overview slides](../0-1-overview/index.qmd)
-:::
-
 ## Course structure
 
 -   [My turn]{.highlight-yellow}: Lecture segments + live coding
@@ -125,6 +152,8 @@ I'll **assume** you
 
 -   have [not]{.highlight-yellow} worked in an IDE before (e.g. RStudio IDE)
 
+- do [not]{.highlight-yellow} have Git / GitHub experience
+
 -   want to learn about Quarto
 :::
 :::
@@ -141,6 +170,78 @@ I'll **teach** you
 :::
 :::
 :::
+
+##  {.smaller}
+
+```{r}
+#| label: fig-experience
+#| echo: false
+#| fig-width: 12
+#| fig-height: 5.5
+#| fig-align: center
+#| fig-cap: "Coding experience across the cohort (n = 11)"
+
+experience_long <- participants |>
+  select(
+    `Programming experience\n(any language)` = experience_programming_general,
+    `R-specific experience`                  = experience_programming_r
+  ) |>
+  tidyr::pivot_longer(
+    everything(),
+    names_to  = "domain",
+    values_to = "level"
+  ) |>
+  mutate(
+    domain = factor(
+      domain,
+      levels = c("Programming experience\n(any language)", "R-specific experience")
+    ),
+    level = factor(level, levels = unname(exp_levels), ordered = TRUE)
+  ) |>
+  count(domain, level, .drop = FALSE)
+
+ggplot(experience_long,
+       aes(x = "", y = n, fill = forcats::fct_rev(level))) +
+  geom_col(width = 0.6) +
+  geom_text(
+    aes(label = ifelse(n > 0, n, "")),
+    position = position_stack(vjust = 0.5),
+    color = "white", fontface = "bold", size = 6
+  ) +
+  facet_wrap(~ domain, ncol = 1, strip.position = "left") +
+  labs(
+    x = NULL,
+    y = "Number of participants",
+    fill = "Experience level"
+  ) +
+  scale_fill_colorblind(breaks = unname(exp_levels)) +
+  guides(fill = guide_legend(nrow = 1)) +
+  coord_flip() +
+  theme_minimal(base_size = 16) +
+  theme(
+    plot.margin = margin(5, 15, 5, 5),
+    panel.grid = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    strip.placement = "outside",
+    strip.text.y.left = element_text(angle = 0, face = "bold", hjust = 1, size = 13),
+    legend.position = "bottom",
+    legend.title = element_text(face = "bold"),
+    legend.text = element_text(size = 12)
+  )
+```
+
+## What you want to learn {.smaller}
+
+> "What do you want to know or be able to do that you don't know or can't do right now?"
+
+Of the **11** answers:
+
+-   [**3**]{.highlight-yellow} asked for things this course [covers directly]{.highlight-yellow} (personal websites, blogs, Quarto vs. GitHub Pages).
+-   [**2**]{.highlight-yellow} asked for things [partially covered]{.highlight-yellow} (Quarto as the documentation layer for R scripts; Quarto as part of a reproducible pipeline).
+-   [**6**]{.highlight-yellow} asked for things [outside the scope]{.highlight-yellow} of this course (Git workflows, AI agents for coding, AI with spreadsheets, long-term data archiving).
+
+The other goals are valuable, but not what this workshop is about. I would be happy to follow up for targeted workshops. 
 
 # What is Quarto? {background-color="#4C326A"}
 
