@@ -40,6 +40,36 @@ jobs:
             any::stringr
             any::tidyr
             any::tidyverse
+            any::yaml
+
+      # Fill the OWNER/REPO placeholders on the runner only. The committed
+      # source keeps the generic placeholders so the site stays a reusable
+      # template; this rewrites _variables.yml on the throwaway runner and runs
+      # setup-template.R to propagate the real values into _quarto.yml before
+      # rendering. Values are derived from the GitHub repository, so a fork or
+      # rename publishes to the correct URL automatically.
+      - name: Fill template values for this repository
+        env:
+          GH_OWNER: ${{ github.repository_owner }}
+          GH_REPO: ${{ github.event.repository.name }}
+        run: |
+          Rscript -e '
+            owner <- Sys.getenv("GH_OWNER")
+            repo  <- Sys.getenv("GH_REPO")
+            stopifnot(nzchar(owner), nzchar(repo))
+            site_url <- sprintf("https://%s.github.io/%s/", owner, repo)
+            repo_url <- sprintf("https://github.com/%s/%s", owner, repo)
+            domain   <- sprintf("%s.github.io/%s", owner, repo)
+            v <- readLines("_variables.yml", warn = FALSE, encoding = "UTF-8")
+            sub1 <- function(x, pat, val) sub(pat, paste0("\\1", val), x, perl = TRUE)
+            v <- sub1(v, "^(\\s*owner:\\s*\").*(?=\"\\s*$)", owner)
+            v <- sub1(v, "^(\\s*repo:\\s*\").*(?=\"\\s*$)", repo)
+            v <- sub1(v, "^(\\s*site-url:\\s*\").*(?=\"\\s*$)", site_url)
+            v <- sub1(v, "^(\\s*repo-url:\\s*\").*(?=\"\\s*$)", repo_url)
+            v <- sub1(v, "^(\\s*plausible-domain:\\s*\").*?(?=\")", domain)
+            writeLines(v, "_variables.yml", useBytes = TRUE)
+          '
+          Rscript setup-template.R
 
       - name: Render and publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
