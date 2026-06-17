@@ -15,7 +15,10 @@ library(stringr)
 
 # course-schedule
 
-link_lesson_plan <- "https://docs.google.com/spreadsheets/d/1b2osej0p-3rg12_uPwjlWC5mAXmbVX_jnipqdHnY7CQ/edit?gid=0#gid=0"
+# Per iteration: replace this link with your own Google Sheet lesson plan.
+# This script is run by the instructor on demand; it is NOT part of the website
+# render. The committed data/course-schedule.csv is what index.qmd reads.
+link_lesson_plan <- "https://docs.google.com/spreadsheets/d/REPLACE_WITH_YOUR_SHEET_ID/edit?gid=0#gid=0"
 
 googlesheets4::read_sheet(link_lesson_plan) |>
   mutate(title = case_when(
@@ -27,4 +30,4 @@ googlesheets4::read_sheet(link_lesson_plan) |>
   mutate(end_time = as.character(end_time)) |>
   mutate(end_time = str_extract(end_time, "\\b\\d{2}:\\d{2}\\b")) |>
   mutate(time = paste(start_time, end_time, sep = " - ")) |>
-  write_csv(here::here("data/tbl-01-quarto-rdmss-26-course-schedule.csv"))
+  write_csv(here::here("data/course-schedule.csv"))

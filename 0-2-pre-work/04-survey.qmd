@@ -6,6 +6,6 @@ title: "Learning more about your prior knowledge"
 
 We have developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.
 
-1. Fill out the survey here: <https://forms.gle/gQht71nvHPTb3Ddw9>
+1. Fill out the survey here: <{{< var resources.survey-url >}}>
 
 

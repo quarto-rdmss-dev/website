@@ -4,7 +4,7 @@ project:
 
 website:
   page-navigation: true
-  title: "Quarto"
+  title: "Course Website"
   description: "As the expectations of researchers increase, publishing
       reproducible scientific articles becomes essential. However,
       choosing tools for these tasks can be difficult.
@@ -12,9 +12,12 @@ website:
       challenges by introducing a workflow that utilizes the
       Quarto scientific and technical publishing system for
       collaborative scientific writing."
-  site-url: "https://quarto-rdmss-26.github.io/website/"
+  # The next four iteration-specific values (site-url, repo-url, sidebar href,
+  # and the Plausible data-domain below) are written by `Rscript setup-template.R`
+  # from the `github:` block in _variables.yml. Edit _variables.yml, not these.
+  site-url: "https://OWNER.github.io/REPO/"
 
-  repo-url: https://github.com/quarto-rdmss-26/website
+  repo-url: "https://github.com/OWNER/REPO"
   repo-actions: [edit, issue]
 
   page-footer:
@@ -28,7 +31,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/quarto-rdmss-26/website
+        href: "https://github.com/OWNER/REPO"
         text: "GitHub organization"
     style: "docked"
     search: false
@@ -81,7 +84,7 @@ format:
     mainfont: "Atkinson Hyperlegible"
     include-in-header:
         - text: |
-            <script defer data-domain="quarto-rdmss-26.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="OWNER.github.io/REPO" src="https://plausible.io/js/script.js"></script>
 
 freeze: auto
 editor: source

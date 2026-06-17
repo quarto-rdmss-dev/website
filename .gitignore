@@ -11,5 +11,6 @@
 
 **/*.quarto_ipynb
 
-docs/sitemap.xml
-docs/prompts
+# Rendered output and freeze cache are built by CI, not committed.
+/docs/
+/_freeze/

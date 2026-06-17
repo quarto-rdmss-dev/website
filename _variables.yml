@@ -1,15 +1,55 @@
-author: "Lars Schöbitz"
-institute: "ETH Zurich"
-department: "Global Health Engineering"
+# ─────────────────────────────────────────────────────────────────────────
+# Template variables. This file is the single source of truth for every
+# iteration-specific value. Edit it, then run `Rscript setup-template.R` to
+# propagate the values that Quarto's {{< var >}} shortcode cannot reach
+# (_quarto.yml, R-chunk URLs, and .qmd front matter). See README.md.
+# Defaults below are generic placeholders so the template renders as-is.
+# ─────────────────────────────────────────────────────────────────────────
 
+# ── Instructor / institution ────────────────────────────────────────────
+author: "Course Instructor"
+author-url: "https://example.org/"
+institute: "Your Institution"
+department: "Your Department"
+
+# ── Course identity ──────────────────────────────────────────────────────
 course:
-  code: "quarto-rdmss-26"
-  short-title: "quarto-rdmss-26"
+  code: "course-code"
+  short-title: "course-code"
   long-title: "Quarto - authoring and publishing tools for collaborative scientific writing"
-  site: "https://quarto-rdmss-26.github.io/website/"
-  site-short: "https://quarto-rdmss-26.github.io/website/"
-  github-org: "https://github.com/quarto-rdmss-26/"
+  site: "https://OWNER.github.io/REPO/"
+  site-short: "OWNER.github.io/REPO"
+  github-org: "https://github.com/OWNER/"
 
+# ── GitHub / hosting ─────────────────────────────────────────────────────
+# Read by setup-template.R to write _quarto.yml (where {{< var >}} does not work).
+github:
+  owner: "OWNER"
+  repo: "REPO"
+  site-url: "https://OWNER.github.io/REPO/"
+  repo-url: "https://github.com/OWNER/REPO"
+  plausible-domain: "OWNER.github.io/REPO"   # set to "" to disable analytics
+
+# ── Session logistics ────────────────────────────────────────────────────
+session:
+  event-name: "Your Summer School 2026"
+  day-label: "Day 1"
+  room: "TBD"
+  datetime: "DD Month YYYY - HH:MM to HH:MM"
+  survey-deadline: "TBD"
+
+# ── External resources ───────────────────────────────────────────────────
+resources:
+  posit-space: "https://posit.cloud/spaces/000000"
+  posit-space-content: "https://posit.cloud/spaces/000000/content/"
+  posit-join-url: "https://posit.cloud/spaces/000000/join?access_code=REPLACE"
+  survey-url: "https://forms.gle/REPLACE"
+  exercises-raw: "https://raw.githubusercontent.com/OWNER/exercises/main"
+  exercises-repo: "https://github.com/OWNER/exercises"
+  participants-data-url: "data/participants-sample.csv"   # local sample; renders offline
+  cohort-size: "n = NN"
+
+# ── Module titles (generic; keep) ────────────────────────────────────────
 md-01:
   title: "Hello Quarto"
 
@@ -27,4 +67,3 @@ md-05:
 
 md-06:
   title: "Wrap-up"
-

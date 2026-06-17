@@ -1,8 +1,8 @@
 ---
 title: "{{< var md-01.title >}}"
 subtitle: "{{< var course.long-title >}}"
-author: "Lars Schöbitz"
-date: "2026-06-04"
+author: "Course Instructor"
+date: today
 date-format: long
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 logo: "../images/ghe-square-logo-vector.svg"
@@ -36,7 +36,7 @@ library(stringr)
 library(ggthemes)
 
 participants <- readr::read_csv(
-  "https://raw.githubusercontent.com/quarto-rdmss-26/admin/refs/heads/main/data/public/participants-anonymized.csv",
+  here::here("data/participants-sample.csv"),
   show_col_types = FALSE
 )
 
@@ -179,7 +179,7 @@ I'll **teach** you
 #| fig-width: 12
 #| fig-height: 5.5
 #| fig-align: center
-#| fig-cap: "Coding experience across the cohort (n = 11)"
+#| fig-cap: "Coding experience across the cohort"
 
 experience_long <- participants |>
   select(
@@ -264,7 +264,7 @@ Sit back and enjoy!
 
 ::: task
 - Open [posit.cloud](https://posit.cloud) & login with your details
-- Open the workspace for the course: <https://posit.cloud/spaces/785946>
+- Open the workspace for the course: <{{< var resources.posit-space >}}>
 - Click "Start" next to the `exercises` project, wait for it to deploy
 - Open `hello-penguins.qmd` from the Files tab (bottom-right)
 - Render the document
