@@ -587,9 +587,9 @@ ggplot(penguins, aes(x = species, fill = species)) +
 
 -   Cross referencing steps:
 
-    -   Add a caption to your figure or table.
-    -   Give an ID to your figure or table, starting with `fig-` or `tbl-`.
-    -   Refer to it with `@fig-...` or `@tbl-...`.
+    -   Add a caption to your figure, table, or equation.
+    -   Give an ID to it, starting with `fig-`, `tbl-`, or `eq-`.
+    -   Refer to it with `@fig-...`, `@tbl-...`, or `@eq-...`.
 
 ## Figure cross references {.smaller}
 
@@ -643,9 +643,59 @@ See @tbl-penguins for data on a few penguins.
 #| label: tbl-penguins
 #| tbl-cap: A few penguins
 
-head(penguins) |> 
+head(penguins) |>
   gt()
 ```
+:::
+:::
+
+# Equations {background-color="#4C326A"}
+
+## Equations
+
+::: {.callout-note}
+These slides on equations and equation cross references were added after the workshop was hosted.
+:::
+
+-   Write maths with LaTeX syntax between dollar signs.
+
+-   **Inline** equations sit in the text with single `$...$`:
+
+    -   `The slope is $m$ in $y = mx + b$.`
+
+-   **Display** equations sit on their own line with double `$$...$$`:
+
+``` markdown
+$$
+E = mc^2
+$$
+```
+
+## Equation cross references {.smaller}
+
+Add a label (`#eq-line`) after a display equation to make it referenceable:
+
+::: columns
+::: {.column width="55%"}
+**Markdown:**
+
+``` markdown
+A straight line is defined by @eq-line.
+
+$$
+y = mx + b
+$$ {#eq-line}
+```
+:::
+
+::: {.column width="45%"}
+**Output:**
+
+A straight line is defined by @eq-line.
+
+$$
+y = mx + b
+$$ {#eq-line}
 :::
 :::
 
